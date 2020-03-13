@@ -26,20 +26,20 @@ public class Game {
 
     public void play(final int[] input) {
         int i = 0;
+
+        System.out.println("Welcome to the Clean Strike game.");
+        System.out.println("Choices of a player: ");
+        System.out.println("1. Strike");
+        System.out.println("2. Multi-Strike");
+        System.out.println("3. Red Strike");
+        System.out.println("4. Striker Strike");
+        System.out.println("5. Defunct Coin");
+        System.out.println("6. None");
+
         while(i < input.length) {
             board.setPlayer(currentPlayer);
-
-            System.out.println("\n" + currentPlayerName + ": Choose a move from the list below");
-            System.out.println("1. Strike");
-            System.out.println("2. Multi-Strike");
-            System.out.println("3. Red Strike");
-            System.out.println("4. Striker Strike");
-            System.out.println("5. Defunct Coin");
-            System.out.println("6. None");
-
             int ch = input[i];
             System.out.println("\nChoice of " + currentPlayerName + ": " + ch);
-
             switch (ch) {
                 case 1: {
                     board.strike();
