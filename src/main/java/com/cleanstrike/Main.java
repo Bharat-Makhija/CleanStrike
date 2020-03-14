@@ -16,9 +16,6 @@ public class Main {
                 int[] inputNumbers = new int[tokens.length];
                 for(int i = 0; i < tokens.length; i++)
                     inputNumbers[i] = Integer.parseInt(tokens[i]);
-                System.out.println("\n--------------------------");
-                System.out.println("---------NEW GAME---------");
-                System.out.println("--------------------------");
                 Game game = createNewGame();
                 game.play(inputNumbers);
             }
@@ -33,7 +30,6 @@ public class Main {
         Player playerA = new Player();
         Player playerB = new Player();
         Board board = new Board();
-        Game game = new Game(playerA, playerB, board);
-        return game;
+        return new Game(playerA, playerB, board);
     }
 }

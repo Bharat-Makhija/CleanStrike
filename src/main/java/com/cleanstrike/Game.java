@@ -24,12 +24,15 @@ public class Game {
         stats = new HashMap<String, String>();
         currentPlayer = playerA;
         currentPlayerName = Constants.PLAYER_A;
+        System.out.println("\n--------------------------");
+        System.out.println("---------NEW GAME---------");
+        System.out.println("--------------------------");
+        System.out.println("Welcome to the Clean Strike game.");
     }
 
     public void play(final int[] input) {
         int i = 0;
 
-        System.out.println("Welcome to the Clean Strike game.");
         System.out.println("Choices of a player: ");
         System.out.println("1. Strike");
         System.out.println("2. Multi-Strike");
