@@ -74,8 +74,12 @@ Final Score (A - B): 5 - 2
 * Lombok 1.18.10
 
 ## Setting Up
-* Make sure the prerequisites are installed.
-* Clone/download the repository.
+* Make sure JDK and Maven are installed and configured properly. After installing JDK and Maven, run:
+```
+mvn –version
+```
+Make sure "Java home" refers to a JDK and not JRE. Refer [this](http://roufid.com/no-compiler-is-provided-in-this-environment/) guide for troubleshooting.
+* Clone/download this repository.
 ```
 git clone https://github.com/Bharat-Makhija/CleanStrike.git
 ```
@@ -86,7 +90,9 @@ To execute unit tests, run:
 mvn clean test
 ```
 
-## Compliation and Execution using Custom Input
+## Compilation and Execution
+To run the program with a custom input file following the specified input format, run the following
+commands:
 ```
 mvn clean install 
 java -jar <path_to_cloned_repository>/target/cleanstrike.jar <absolute_path_to_input_file>
