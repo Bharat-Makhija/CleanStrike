@@ -1,3 +1,5 @@
+package com.cleanstrike;
+
 import lombok.Getter;
 
 import java.util.HashMap;

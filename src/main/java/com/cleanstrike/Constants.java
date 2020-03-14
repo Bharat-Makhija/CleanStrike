@@ -1,3 +1,5 @@
+package com.cleanstrike;
+
 public final class Constants {
 
     public static final String PLAYER_A = "Player A";
